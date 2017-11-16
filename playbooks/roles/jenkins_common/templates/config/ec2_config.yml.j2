@@ -17,7 +17,7 @@ CLOUDS:
             REMOTE_FS_ROOT: '{{ ami.REMOTE_FS_ROOT }}'
             SSH_PORT: '{{ ami.SSH_PORT }}'
             INSTANCE_TYPE: '{{ ami.INSTANCE_TYPE }}'
-            EBS_OPTIMIZED: '{{ ami.EBS_OPTIMIZED }}'
+            EBS_OPTIMIZED: {{ ami.EBS_OPTIMIZED }}
             LABEL_STRING: '{{ ami.LABEL_STRING }}'
             MODE: '{{ ami.MODE }}'
             DESCRIPTION: '{{ ami.DESCRIPTION }}'
