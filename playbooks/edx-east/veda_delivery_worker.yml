@@ -2,4 +2,11 @@
   hosts: all
   gather_facts: True
   roles:
+    - aws
     - veda_delivery_worker
+    - role: splunkforwarder
+      when: COMMON_ENABLE_SPLUNKFORWARDER
+    - role: newrelic
+      when: COMMON_ENABLE_NEWRELIC
+    - role: newrelic_infrastructure
+      when: COMMON_ENABLE_NEWRELIC_INFRASTRUCTURE
